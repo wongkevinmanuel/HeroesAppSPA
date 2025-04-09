@@ -1,4 +1,3 @@
-import React from 'react'
 import { Navbar } from '../../ui'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { DcPage, MarvelPage, SearchPage } from '../pages'

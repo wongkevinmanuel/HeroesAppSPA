@@ -33,7 +33,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
   //
   const login = (name: string = '') =>{
     const user = {
-      id: '123',
+      id: '123456',
       name: name
     };
 

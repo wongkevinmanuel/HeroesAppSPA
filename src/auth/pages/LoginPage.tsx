@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context';
 
@@ -9,7 +9,7 @@ export const LoginPage = () => {
   const navigate = useNavigate(); 
 
   const onLogin=()=>{
-    login('Fernando Herrera');
+    login('Jane Doe');
     const lastPath = localStorage.getItem('lastPath') || '/';
     //No regresar al Login si fue exitoso
     navigate(lastPath, {replace:true});
