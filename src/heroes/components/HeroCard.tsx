@@ -21,7 +21,8 @@ interface HeroCardProps{
 }
 
 export const HeroCard = (heroe:HeroCardProps) => {
-    const heroImageUrl = `src/assets/heroes/${heroe.id}.jpg`;
+    const heroImageUrl = `https://res.cloudinary.com/dgeig1ohh/image/upload/v1744314115/heroes/${heroe.id}.jpg`;
+    //const heroImageUrl = `src/assets/heroes/${heroe.id}.jpg`;
     //Crear jsx para mejor presentacion
     //const charactersByHero = (<p>{heroe.characters}</p>);
 

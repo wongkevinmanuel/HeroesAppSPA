@@ -16,7 +16,7 @@ export const Navbar = () => {
         //Evitar regresar al historial anterior, por el reemplazo 
          navigate('/login', { replace: true});
     }
-    const logoImgUrl = `/src/assets/heroes/mydc.png`;
+    const logoImgUrl = `https://res.cloudinary.com/dgeig1ohh/image/upload/v1744314115/heroes/mydc_wzzbbx.png`;
     
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">

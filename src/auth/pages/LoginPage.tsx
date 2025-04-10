@@ -60,7 +60,7 @@ export const LoginPage = () => {
           
               </div>
               <div className="col-sm-6 px-0 d-none d-sm-block">
-                <img src="http://localhost:5173/src/assets/heroes/dc-batman.jpg"
+                <img src="https://res.cloudinary.com/dgeig1ohh/image/upload/v1744314115/heroes/dc-batman.jpg"
                   alt="Login image" className="w-100 vh-100" style={{objectFit: 'cover', objectPosition: 'left'}} />
               </div>
             </div>
