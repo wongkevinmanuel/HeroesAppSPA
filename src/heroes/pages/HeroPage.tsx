@@ -23,7 +23,10 @@ export const HeroPage = () => {
   if(!hero){
     return <Navigate to="/marvel"></Navigate>    
   }
-  const heroImageUrl = `/src/assets/heroes/${ hero.id }.jpg`;
+
+  const heroImageUrl = `https://res.cloudinary.com/dgeig1ohh/image/upload/v1744314115/heroes/${hero.id}.jpg`;
+
+  //const heroImageUrl = `/src/assets/heroes/${ hero.id }.jpg`;
 
   //style={{ maxWidth: 250 +'px', marginTop: 10, margin: 5}}
 
