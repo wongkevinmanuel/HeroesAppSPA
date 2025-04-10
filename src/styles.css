@@ -1,44 +1,95 @@
+
 .card {
-    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+
+    /*background-color: #ffffff;
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    margin: 16px;
+    sbox-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+    
+    position: relative;
+    perspective: 1000px;
     transform-style: preserve-3d;
+
+    background: transparent;
+    border: none;
 }
 
-.card:hover {
-    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+.card-img{
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+
 }
 
+.box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 2s ease;
+}
+
+.card-img{
+    position: absolute;
+    transform-style: preserve-3d;
+
+}
+
+.card-body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px !important;
+
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+
+    /*efecto giro*/
+    transform: rotateY(180deg);
+}
+/*.card-body div{*/
+.card-body .kevin-color{
+    background-color: #1f1f1f;
+    color: white;
+    width: 100%;
+    height: 80%;
+    transform-style: preserve-3d;
+    transform: translateZ(100px);
+    padding: 20px;
+}
+
+
+/* KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK */
+/* Titulo de la card negro letras grandes*/
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #333333;
+    color: white;
 }
 
-.card-content {
-    font-size: 1rem;
-    color: #666666;
-    line-height: 1.5;
+.card-text{
+    color: white;
 }
 
-.card-footer {
-    margin-top: 16px;
-    text-align: right;
+.text-muted{
+    color: white;
 }
 
-.card-footer a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
+/*Para que se mueva el card */
+.card:hover .box{
+    /* efecto giro */
+    transform: rotateY(180deg);
+    /*box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);*/
 }
 
-.card-footer a:hover {
-    text-decoration: underline;
+.kevin-color:nth-child(1){
+    background: #C9FFBF !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

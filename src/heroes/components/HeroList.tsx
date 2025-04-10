@@ -13,7 +13,7 @@ export const HeroList = ({publisher} : HeroListProps) => {
   const heroes = useMemo( ()=> getHeroesByPublisher(publisher), [ publisher ] );
 
   return (
-    <div className="row rows-cols-1 rows-cols-md-3 g-4">
+    <div className="row rows-cols-1 rows-cols-md-3 g-4 gap-2">
         {
             heroes.map(heroe => ( 
                 <HeroCard key={heroe.id} 
